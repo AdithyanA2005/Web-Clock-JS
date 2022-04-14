@@ -14,9 +14,9 @@ setInterval(() => {
   let minute = day.getMinutes();
   let second = day.getSeconds();
   
-  hourHand.style.transform = `rotateZ(${hour + (minute/12)}deg)`;
-  minuteHand.style.transform = `rotateZ(${minute}deg)`;
-  secondHand.style.transform = `rotateZ(${second}deg)`;
+  hourHand.style.transform = `rotateZ(${hour * 30 + (minute/2)}deg)`;
+  minuteHand.style.transform = `rotateZ(${minute * 6}deg)`;
+  secondHand.style.transform = `rotateZ(${second * 6}deg)`;
 })
 
 // DIGI CLOCK
